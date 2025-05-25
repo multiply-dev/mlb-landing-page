@@ -1,0 +1,43 @@
+.wheel-wrapper {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.wheel-image {
+  width: 100%;
+  height: auto;
+  transition: transform 4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.wheel-pointer {
+  position: absolute;
+  top: -5%;
+  left: 50%;
+  width: 150px;
+  height: auto;
+  transform: translate(-50%);
+  z-index: 1;
+}
+
+.wheel-center {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  width: 100px;
+  height: auto;
+  transform: translate(-50%);
+  z-index: 1;
+}
+
+.spin-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e4041c;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
