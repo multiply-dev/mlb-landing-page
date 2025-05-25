@@ -4,10 +4,10 @@ import './CouponModal.css';
 const CouponModal = ({ prize }) => {
 
   return (
-    <div className="modal-overlay">
-      <div className="modal-content">
+    <div className="coupon-modal-overlay">
+      <div className="coupon-modal-content">
         <h2>Coupon Code</h2>
-        <p className="prize-text">"{prize}"</p>
+        <p className="coupon-text">"{prize}"</p>
       </div>
     </div>
   );

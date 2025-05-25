@@ -3,10 +3,12 @@ import './PrizeModal.css';
 
 const PrizeModal = ({ prize, onClaim }) => {
   return (
-    <div className="modal-overlay">
-      <div className="modal-content">
-        <h2>You Won:</h2>
-        <p className="prize-text">"{prize}"</p>
+    <div className="prize-modal-overlay">
+      <div className="prize-modal-content">
+        <div>
+          <h1 className="prize-text">{prize}</h1>
+          <h3 className="prize-subtext">YOUR NEXT HI-CHEW ORDER!</h3>
+        </div>
         <button className="claim-button" onClick={onClaim}>
           Claim Your Prize
         </button>

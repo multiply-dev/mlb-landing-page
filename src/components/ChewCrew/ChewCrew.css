@@ -5,24 +5,6 @@
 
 }
 
-.desc-text {
-  font-weight:700;
-  min-width: 14rem;
-  max-width: 27rem;
-}
-
-.dessert-mix {
-  color: #FF6F89;
-  font-weight:900;
-  text-shadow: 
-  -1px -1px 0 #fff,  
-  1px -1px 0 #fff,
-  -1px 1px 0 #fff,
-  1px 1px 0 #fff,
-  0px 0px 1px #fff; 
-  text-transform: uppercase;
-}
-
 .disclaimer-text {
   font-size: small;
   margin-top: 3rem;
@@ -34,12 +16,13 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 
 input {
-  background-color: #FF6F89;
+  background-color: transparent;
   border: none;
-  border-top: 2px solid #FFD101; 
+  border-top: 2px solid white; 
   color: #FFF;
   font-size: medium;
   font-weight: 600;
@@ -53,14 +36,14 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  background-color: #FF6F89;
-  -webkit-box-shadow: 0 0 0 30px #FF6F89 inset !important;
+  background-color: #17478F;
+  -webkit-box-shadow: 0 0 0 30px #17478F inset !important;
   -webkit-text-fill-color: #FFF !important;
 }
 
 ::placeholder {
   border: none;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 1);
   font-family: 'Montserrat', sans-serif;
   font-size: medium;
   font-weight: 600;
@@ -68,10 +51,12 @@ input:-webkit-autofill:active {
 }
 
 .questions-container {
-  border: 2px solid #FFD101;
+  border: 2px solid white;
+  border-top: none;
   display: flex;
   flex-direction: column;
   margin: 2rem;
+  margin-bottom: 0;
 }
 
 .sign-up-text {
@@ -84,14 +69,42 @@ input:-webkit-autofill:active {
 }
 
 .submit-button {
-  background-color: #16478E;
-  border: none;
-  font-size: medium;
+  background-color: #17478F;
+  border: 2px solid #FFD101;
+  color: white;
+  cursor: pointer;
+  min-width: 14rem;
+  max-width: 16rem;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+}
+
+.almost-there-text {
+  color: white;
   text-transform: uppercase;
 }
 
 .title-text {
-  font-size: 40px;
-  margin-bottom: 3rem;
+  color: #FFD101;
+  font-size: 30px;
+  padding: 2rem 2rem 0;
+  max-width: 400px;
   text-transform: uppercase;
+}
+
+.terms-container {
+  color: white;
+  justify-items: center;
+  text-align: center;
+}
+
+.chevron-toggle {
+  border: none;
+  padding: 1rem 0.5rem;
+}
+
+.terms-details {
+  align-self: center;
+  max-width: 70%;
+  text-align: left;
 }

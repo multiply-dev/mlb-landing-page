@@ -46,6 +46,7 @@ const App = () => {
         <ChewCrew prize={prize} onSignupComplete={handleSignupComplete} />
       )}
 
+      {/* hasSpun && isSignedUp saved in localstorage? */}
       {isSignedUp && (
         <CouponModal prize={prize} />
       )}
