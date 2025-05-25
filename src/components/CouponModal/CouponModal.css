@@ -1,0 +1,39 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(23, 71, 143, 0.85); /* #17478F with transparency */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.modal-content {
+  background-color: #e4041c;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.prize-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.claim-button {
+  background-color: white;
+  color: #e4041c;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}

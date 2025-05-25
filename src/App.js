@@ -4,6 +4,7 @@ import Footer from './components/Footer/Footer';
 import ChewCrew from './components/ChewCrew/ChewCrew';
 import SpinningWheel from './components/SpinningWheel/SpinningWheel';
 import PrizeModal from './components/PrizeModal/PrizeModal';
+import CouponModal from './components/CouponModal/CouponModal';
 
 import './App.css';
 
@@ -26,7 +27,6 @@ const App = () => {
 
 
   const handleSignupComplete = () => {
-    console.log("prize: ", prize )
     setIsSignedUp(true);
   };
 
@@ -46,6 +46,9 @@ const App = () => {
         <ChewCrew prize={prize} onSignupComplete={handleSignupComplete} />
       )}
 
+      {isSignedUp && (
+        <CouponModal prize={prize} />
+      )}
 
       <Footer />
     </div>

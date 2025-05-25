@@ -5,8 +5,6 @@ import './ChewCrew.css';
 
 const ChewCrew = ({ onSignupComplete, prize }) => {
 
-  console.log('rpize: ', prize)
-
   const MailchimpURL = process.env.REACT_APP_MAILCHIMP;
   const [fname, setFName] = useState('');
   const [lname, setLName] = useState('');
@@ -14,7 +12,6 @@ const ChewCrew = ({ onSignupComplete, prize }) => {
   const [flavor, setFlavor] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState(null);
-  const [signedUp, setSignedUp] = useState(false);
 
   const couponCode = prize;
 
@@ -31,7 +28,6 @@ const ChewCrew = ({ onSignupComplete, prize }) => {
         if (err) {
           setError('An error occurred. Please try again.');
         } else {
-          setSignedUp(true);
           onSignupComplete();
         }
       }
@@ -40,8 +36,6 @@ const ChewCrew = ({ onSignupComplete, prize }) => {
 
   return (
     <div className="chew-crew-container">
-      {!signedUp ? (
-        <>
           <h1 className='title-text'>
             <span className="dessert-mix">Chew Crew</span>
             <br />
@@ -69,12 +63,6 @@ const ChewCrew = ({ onSignupComplete, prize }) => {
           <p className="disclaimer-text">
             <em>*Subscribers will receive updates on new flavor launches, promotional deals, upcoming events, etc.</em>
           </p>
-        </>
-      ) : (
-        <div className="coupon-section">
-          <h2> Here’s your coupon code: <strong>{couponCode}</strong></h2>
-        </div>
-      )}
     </div>
   );
 };
