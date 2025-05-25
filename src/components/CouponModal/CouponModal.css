@@ -31,7 +31,13 @@
 
 .coupon-text {
   font-size: 36px;
-  font-weight: bold;
-  margin: 20px 0;
 }
 
+.coupon-subtext {
+  margin: 0;
+  font-size: 30px;
+}
+
+.hi-chew-link {
+  color: #17478F;
+}

@@ -6,9 +6,14 @@ const CouponModal = ({ prize }) => {
   return (
     <div className="coupon-modal-overlay">
       <div className="coupon-modal-content">
-        <h2>Coupon Code</h2>
-        <p className="coupon-text">"{prize}"</p>
-      </div>
+          <div>
+            <h1 className="coupon-text">Coupon Code:</h1>
+            <h3 className="coupon-subtext">[insert-coupon-name]</h3>
+          </div>
+          <div>
+            <h3>Visit <a href="https://www.hi-chew.com/" className="hi-chew-link" target="_blank" rel="noreferrer">HI-CHEW</a> and use this code at checkout</h3>
+          </div>
+        </div>
     </div>
   );
 };

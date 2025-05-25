@@ -17,8 +17,6 @@ const ChewCrew = ({ onSignupComplete, prize }) => {
 
   const [showTermsText, setShowTermsText] = useState(false);
 
-  const couponCode = prize;
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
