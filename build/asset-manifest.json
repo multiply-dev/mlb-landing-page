@@ -1,24 +1,21 @@
 {
   "files": {
-    "main.css": "/mlb-landing-page/static/css/main.81d907e7.css",
-    "main.js": "/mlb-landing-page/static/js/main.77cb0a45.js",
-    "static/js/453.16a612f3.chunk.js": "/mlb-landing-page/static/js/453.16a612f3.chunk.js",
-    "static/media/Header.png": "/mlb-landing-page/static/media/Header.18ce4bc62b8d4e98c444.png",
-    "static/media/strawberry.png": "/mlb-landing-page/static/media/strawberry.9602e1172f2c3ba3a1fe.png",
-    "static/media/keyLime.png": "/mlb-landing-page/static/media/keyLime.8eee581b9d01ef317813.png",
-    "static/media/candyApple.png": "/mlb-landing-page/static/media/candyApple.d2c56fb962a88b5181aa.png",
-    "static/media/strawberry-pillow.png": "/mlb-landing-page/static/media/strawberry-pillow.c12ecda291903ebc1b0f.png",
-    "static/media/key-lime-pillow.png": "/mlb-landing-page/static/media/key-lime-pillow.8a4b6f090e65d7f07d13.png",
-    "static/media/candy-apple-pillow.png": "/mlb-landing-page/static/media/candy-apple-pillow.5b19d0a72af9d30afca5.png",
+    "main.css": "/mlb-landing-page/static/css/main.a1ef8c38.css",
+    "main.js": "/mlb-landing-page/static/js/main.d22f4d66.js",
+    "static/js/453.a6571f96.chunk.js": "/mlb-landing-page/static/js/453.a6571f96.chunk.js",
+    "static/media/Wheel.gif": "/mlb-landing-page/static/media/Wheel.f0fa19d8642f3dce94d6.gif",
+    "static/media/field-header.jpg": "/mlb-landing-page/static/media/field-header.06ce62e13c8e4a16b3ba.jpg",
+    "static/media/Wheel-Middle.png": "/mlb-landing-page/static/media/Wheel-Middle.fcc5c1d3c85b7af74217.png",
+    "static/media/Wheel-Pointer.png": "/mlb-landing-page/static/media/Wheel-Pointer.b1f86014ea3428558d2e.png",
     "static/media/Footer.png": "/mlb-landing-page/static/media/Footer.e04a6b50a0698b6e3314.png",
     "static/media/Logo.png": "/mlb-landing-page/static/media/Logo.7cbf0bcc36a0550d2118.png",
     "index.html": "/mlb-landing-page/index.html",
-    "main.81d907e7.css.map": "/mlb-landing-page/static/css/main.81d907e7.css.map",
-    "main.77cb0a45.js.map": "/mlb-landing-page/static/js/main.77cb0a45.js.map",
-    "453.16a612f3.chunk.js.map": "/mlb-landing-page/static/js/453.16a612f3.chunk.js.map"
+    "main.a1ef8c38.css.map": "/mlb-landing-page/static/css/main.a1ef8c38.css.map",
+    "main.d22f4d66.js.map": "/mlb-landing-page/static/js/main.d22f4d66.js.map",
+    "453.a6571f96.chunk.js.map": "/mlb-landing-page/static/js/453.a6571f96.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81d907e7.css",
-    "static/js/main.77cb0a45.js"
+    "static/css/main.a1ef8c38.css",
+    "static/js/main.d22f4d66.js"
   ]
 }
