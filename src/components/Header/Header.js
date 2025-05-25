@@ -1,20 +1,23 @@
-import React from 'react';
-import headerImage from '../../assets/Header.png';
-import logo from '../../assets/Logo.png';
+import mlblogo from "../../assets/mlb-logo.png";
 
 import './Header.css'
 
 const Header = () => {
   return (
     <header className="header">
-      <div className="logo-container">
-        <a href="https://www.hi-chew.com/" target="_blank" rel="noopener noreferrer">
-          <img src={logo} alt="Logo" className="logo" />
-        </a>
-      </div>
-      <div className="header-image-container">
-        <img src={headerImage} alt="Header" className="header-image" />
-      </div>
+        <div className="header-text"> 
+          <h1 className='header-title-text'>
+            <img src={mlblogo} alt="MLB Logo" className="mlb-logo" />
+            <br />
+            <span className="step-up-text">Step up to <br /> the plate</span>
+            <br />
+            with Hi-Chew<sup>®</sup>
+          </h1>
+          <p>Now it's time to swing for the fences - grab your bat (or your finger) 
+            and take your best shot! <br /> Spin the prize wheel to unlock your 
+            grand prize.
+          </p>
+        </div>
     </header>
   );
 };

@@ -71,7 +71,7 @@ const ChewCrew = ({ onSignupComplete, prize }) => {
               </button>
               {showTermsText && (
                 <div className="terms-details">
-                  <p>
+                  <p className="terms-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed
                     convallis leo. Suspendisse potenti. Sed ac tortor elit. In hac
                     habitasse platea dictumst. Curabitur non nisi eu ligula commodo

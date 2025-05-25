@@ -1,0 +1,13 @@
+  
+.logo-container {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+  
+.logo {
+  max-width: 8rem; /* Adjust size as needed */
+  height: auto;
+}

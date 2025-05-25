@@ -11,7 +11,7 @@ const CouponModal = ({ prize }) => {
             <h3 className="coupon-subtext">[insert-coupon-name]</h3>
           </div>
           <div>
-            <h3>Visit <a href="https://www.hi-chew.com/" className="hi-chew-link" target="_blank" rel="noreferrer">HI-CHEW</a> and use this code at checkout</h3>
+            <h3>Visit <a href="https://www.hi-chew.com/" className="hi-chew-link" target="_blank" rel="noreferrer">HI-CHEW<sup>®</sup></a> and use this code at checkout</h3>
           </div>
         </div>
     </div>

@@ -107,4 +107,9 @@ input:-webkit-autofill:active {
   align-self: center;
   max-width: 70%;
   text-align: left;
+  justify-items: center;
+}
+
+.terms-text {
+  font-size: 16px;
 }

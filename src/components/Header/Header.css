@@ -1,28 +1,41 @@
 .header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .logo-container {
-    width: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-  }
-  
-  .logo {
-    max-width: 8rem; /* Adjust size as needed */
-    height: auto;
-  }
-  
-  .header-image-container {
-    width: 100%;
-  }
-  
-  .header-image {
-    width: 100vw;
-    height: auto;
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mlb-logo {
+  max-width: 4rem; /* Adjust size as needed */
+  height: auto;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  gap: 1.5rem;
+  max-width: 80%;
+  text-align: center;
+}
+
+.header-title-text {
+  color: #FFD101;
+  font-size: 36px;
+  font-weight: 700;
+  padding: 4rem 2rem 0;
+  text-transform: uppercase;
+}
+
+.step-up-text {
+  color: white;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+p {
+  font-weight: 700;
+  font-size: 20px;
+  max-width: 70%;
+}
