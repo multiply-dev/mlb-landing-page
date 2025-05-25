@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/hi-chew-flavor-quiz/static/css/main.81d907e7.css",
+    "main.js": "/hi-chew-flavor-quiz/static/js/main.77cb0a45.js",
+    "static/js/453.16a612f3.chunk.js": "/hi-chew-flavor-quiz/static/js/453.16a612f3.chunk.js",
+    "static/media/Header.png": "/hi-chew-flavor-quiz/static/media/Header.18ce4bc62b8d4e98c444.png",
+    "static/media/strawberry.png": "/hi-chew-flavor-quiz/static/media/strawberry.9602e1172f2c3ba3a1fe.png",
+    "static/media/keyLime.png": "/hi-chew-flavor-quiz/static/media/keyLime.8eee581b9d01ef317813.png",
+    "static/media/candyApple.png": "/hi-chew-flavor-quiz/static/media/candyApple.d2c56fb962a88b5181aa.png",
+    "static/media/strawberry-pillow.png": "/hi-chew-flavor-quiz/static/media/strawberry-pillow.c12ecda291903ebc1b0f.png",
+    "static/media/key-lime-pillow.png": "/hi-chew-flavor-quiz/static/media/key-lime-pillow.8a4b6f090e65d7f07d13.png",
+    "static/media/candy-apple-pillow.png": "/hi-chew-flavor-quiz/static/media/candy-apple-pillow.5b19d0a72af9d30afca5.png",
+    "static/media/Footer.png": "/hi-chew-flavor-quiz/static/media/Footer.e04a6b50a0698b6e3314.png",
+    "static/media/Logo.png": "/hi-chew-flavor-quiz/static/media/Logo.7cbf0bcc36a0550d2118.png",
+    "index.html": "/hi-chew-flavor-quiz/index.html",
+    "main.81d907e7.css.map": "/hi-chew-flavor-quiz/static/css/main.81d907e7.css.map",
+    "main.77cb0a45.js.map": "/hi-chew-flavor-quiz/static/js/main.77cb0a45.js.map",
+    "453.16a612f3.chunk.js.map": "/hi-chew-flavor-quiz/static/js/453.16a612f3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81d907e7.css",
+    "static/js/main.77cb0a45.js"
+  ]
+}
