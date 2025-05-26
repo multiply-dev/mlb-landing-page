@@ -1,11 +1,10 @@
-import React from 'react';
 import './CouponModal.css';
 
-const CouponModal = ({ prize }) => {
+const CouponModal = ({ prize, prizeColor }) => {
 
   return (
     <div className="coupon-modal-overlay">
-      <div className="coupon-modal-content">
+      <div className={`coupon-modal-content ${prizeColor}`}>
           <div>
             <h1 className="coupon-text">Coupon Code:</h1>
             <h3 className="coupon-subtext">[insert-coupon-name]</h3>

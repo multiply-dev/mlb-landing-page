@@ -12,7 +12,6 @@
 }
 
 .coupon-modal-content {
-  background-color: #e4041c;
   padding: 30px;
   border: 2px solid white;
   border-radius: 50px;
@@ -39,6 +38,6 @@
 }
 
 .hi-chew-link {
-  color: #17478F;
-  text-decoration: none;
+  color: white;
+  text-decoration: underline;
 }

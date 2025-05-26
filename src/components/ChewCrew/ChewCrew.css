@@ -93,9 +93,14 @@ input:-webkit-autofill:active {
 }
 
 .terms-container {
+  align-items: center;
+  align-self: center;
   color: white;
   justify-items: center;
+  justify-self: center;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .chevron-toggle {
@@ -113,3 +118,27 @@ input:-webkit-autofill:active {
 .terms-text {
   font-size: 16px;
 }
+
+/* .checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1em;
+  height: 1em;
+  background-color: transparent;
+  border: 2px solid white;
+  cursor: pointer;
+  position: relative;
+  padding: 0.5em 0.5em;
+  margin: 0;
+}
+.checkbox:checked::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 6px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+} */

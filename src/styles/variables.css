@@ -1,0 +1,37 @@
+:root {
+  --red: #e4041c;
+  --green: #5dc908;
+  --teal: #00ccdf;
+  --orange: #f2690b;
+  --pink: #df10c4;
+  --yellow: #f0bc05;
+  --purple: #702abc;
+}
+
+.prize-10-percent-off {
+  background-color: var(--pink);
+}
+
+.prize-bucket-of-hi-chew {
+  background-color: var(--orange);
+}
+
+.prize-hi-chew-keychain {
+  background-color: var(--teal);
+}
+
+.prize-20-percent-off {
+  background-color: var(--red);
+}
+
+.prize-hi-chew-stick {
+  background-color: var(--green);
+}
+
+.prize-15-percent-off {
+  background-color: var(--purple);
+}
+
+.prize-tickets {
+  background-color: var(--yellow);
+}

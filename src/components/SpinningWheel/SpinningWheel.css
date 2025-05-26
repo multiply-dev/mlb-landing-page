@@ -5,20 +5,19 @@
   gap: 1.5rem;
   position: relative;
   width: 40%;
-  min-width: 300px;
+  min-width: 345px;
   margin: 0 auto;
 }
 
 .wheel-image {
   width: 100%;
-  padding: 2rem;
   height: auto;
   transition: transform 4s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 .wheel-pointer {
   position: absolute;
-  top: 3%;
+  top: -5%;
   left: 50%;
   width: 60%;
   height: auto;
@@ -28,7 +27,7 @@
 
 .wheel-center {
   position: absolute;
-  top: 31%;
+  top: 28%;
   left: 50%;
   width: 33%;
   height: auto;

@@ -58,7 +58,7 @@ const ChewCrew = ({ onSignupComplete, prize }) => {
             </div>
 
             <div className="terms-container">
-              <input id="mce-TERMS" name="TERMS" type="checkbox" value={terms} onChange={(e) => setTerms(!terms)} placeholder="Terms and Conditions" required />
+              <div><input id="mce-TERMS" className="checkbox" name="TERMS" type="checkbox" value={terms} onChange={(e) => setTerms(!terms)} placeholder="Terms and Conditions" required />
               <label className="terms-label">
                 I accept and agree to the <strong>Terms and Conditions</strong>
               </label>
@@ -69,6 +69,7 @@ const ChewCrew = ({ onSignupComplete, prize }) => {
               >
                 <Chevron isopen={!showTermsText} />
               </button>
+              </div>
               {showTermsText && (
                 <div className="terms-details">
                   <p className="terms-text">

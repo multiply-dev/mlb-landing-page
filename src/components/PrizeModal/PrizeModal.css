@@ -12,7 +12,6 @@
 }
 
 .prize-modal-content {
-  background-color: #e4041c;
   padding: 30px;
   border: 2px solid white;
   border-radius: 50px;
@@ -38,7 +37,6 @@
 }
 
 .claim-button {
-  background-color: #e4041c;
   border: 2px solid white;
   color: white;
   cursor: pointer;

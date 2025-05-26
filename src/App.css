@@ -1,3 +1,5 @@
+@import './styles/variables.css';
+
 .container {
   align-items: center;
   background-color: #17478F;
@@ -7,10 +9,10 @@
 
 .header-background {
   width: 100%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #17478F 89%), url('./assets/field-header.jpg');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #17478F 89%), url('./assets/field-header.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   display: flex;
   justify-content: center;
   flex-direction: column;
