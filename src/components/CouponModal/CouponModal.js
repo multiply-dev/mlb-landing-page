@@ -8,7 +8,7 @@ const CouponModal = ({ prize, prizeColor }) => {
     const getCoupon = async () => {
       if (prize) {
         try {
-          const response = await fetch(`https://script.google.com/macros/s/AKfycbzVtZp2T6YtZc_IsNnG3wYU-f2QuH2CFY7eV3f9VjDFn3G-w5W-32O03EL24_9dbSWn/exec?prize=${encodeURIComponent(prize)}`);
+          const response = await fetch(`https://script.google.com/macros/s/AKfycbxiFhzS5uVGSvs7J0lCRbmpC5KyPAx5b_u4R7HbBiGhhUTcrUB6aEcrLsAOMVOOic7N/exec?prize=${encodeURIComponent(prize)}`);
           const data = await response.json();
           setCoupon(data.coupon || "No coupon available");
         } catch (error) {
