@@ -59,7 +59,7 @@ const ChewCrew = ({ onSignupComplete, prize }) => {
 
             <div className="terms-container">
               <div className="terms-label">
-                <input id="mce-TERMS" className="checkbox" name="TERMS" type="checkbox" value={terms} onChange={(e) => setTerms(!terms)} placeholder="Terms and Conditions" required />
+                <input id="mce-TERMS" className="check" name="TERMS" type="checkbox" value={terms} onChange={(e) => setTerms(!terms)} placeholder="Terms and Conditions" required />
                 <label>
                   I accept and agree to the <strong>Terms and Conditions</strong>
                 </label>
