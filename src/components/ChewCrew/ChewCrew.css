@@ -116,15 +116,11 @@ input:-webkit-autofill:active {
 }
 
 .terms-text {
-  font-size: small;
+  font-size: x-small;
 }
 
 .terms-label {
-  font-size: small;
-  white-space: nowrap;
-  white-space: nowrap;              /* prevent line breaks */
-  overflow: hidden;                 /* hide overflow */
-  text-overflow: ellipsis;         /* optional: show "..." if it overflows */
+  font-size: x-small;
 }
 
 /* .checkbox {
