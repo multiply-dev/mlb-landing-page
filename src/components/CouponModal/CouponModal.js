@@ -5,11 +5,14 @@ const CouponModal = ({ prize, prizeColor }) => {
   const [coupon, setCoupon] = useState("");
 
   useEffect(() => {
+    const savedCoupon = localStorage.getItem('couponCode');
+
     const getCoupon = async () => {
       if (prize) {
         try {                                                             
           const response = await fetch(`https://script.google.com/macros/s/AKfycbz8xPoD4Y3EY1w0wW17l_FNh3cQ7xjEO1Wxnv-GgAKQ4Duj5ZCGbW2HQymRdYly5il7HA/exec?prize=${encodeURIComponent(prize)}`);
           const data = await response.json();
+          localStorage.setItem('couponCode', data.coupon.toString());
           setCoupon(data.coupon || "No coupon available");
         } catch (error) {
           console.error("Error fetching coupon:", error);
@@ -18,7 +21,11 @@ const CouponModal = ({ prize, prizeColor }) => {
       }
     };
 
-    getCoupon();
+    if (savedCoupon) {
+      setCoupon(savedCoupon);
+    } else {
+      getCoupon();
+    }
   }, [prize]);
 
   return (

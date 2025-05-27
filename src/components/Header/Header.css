@@ -22,7 +22,7 @@
 
 .header-title-text {
   color: #FFD101;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 700;
   padding: 4rem 2rem 0;
   text-transform: uppercase;
@@ -30,17 +30,30 @@
 
 .step-up-text {
   color: white;
-  font-size: 44px;
+  font-size: 32px;
   font-weight: 800;
 }
 
 p {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 14px;
   max-width: 70%;
 }
 
-/* Large devices (desktops, 1024px and up) */
+@media (min-width: 500px) {
+  .step-up-text {
+    font-size: 44px;
+  }
+
+  .header-title-text {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
 @media (min-width: 768px) {
   .step-up-text {
     font-size: 75px;

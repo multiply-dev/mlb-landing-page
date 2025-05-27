@@ -58,17 +58,18 @@ const ChewCrew = ({ onSignupComplete, prize }) => {
             </div>
 
             <div className="terms-container">
-              <div><input id="mce-TERMS" className="checkbox" name="TERMS" type="checkbox" value={terms} onChange={(e) => setTerms(!terms)} placeholder="Terms and Conditions" required />
-              <label className="terms-label">
-                I accept and agree to the <strong>Terms and Conditions</strong>
-              </label>
-              <button
-                type="button"
-                className="chevron-toggle"
-                onClick={() => setShowTermsText(!showTermsText)}
-              >
-                <Chevron isopen={!showTermsText} />
-              </button>
+              <div className="terms-label">
+                <input id="mce-TERMS" className="checkbox" name="TERMS" type="checkbox" value={terms} onChange={(e) => setTerms(!terms)} placeholder="Terms and Conditions" required />
+                <label>
+                  I accept and agree to the <strong>Terms and Conditions</strong>
+                </label>
+                <button
+                  type="button"
+                  className="chevron-toggle"
+                  onClick={() => setShowTermsText(!showTermsText)}
+                >
+                  <Chevron isopen={!showTermsText} />
+                </button>
               </div>
               {showTermsText && (
                 <div className="terms-details">

@@ -1,4 +1,26 @@
-.footer-image {
-  margin-top: 4rem;
+.footer-list {
+  display: flex;
+  gap: 2rem;
+  padding: 5rem 0 5rem;
   width: 100%;
+  list-style: none;
+}
+
+.list-social-item {
+  list-style: none;
+}
+
+.list-social__link {
+  color: white;
+  text-decoration: none;
+}
+
+.list-social__link:visited {
+  color: white;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
 }
