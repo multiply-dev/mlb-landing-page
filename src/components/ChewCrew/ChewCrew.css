@@ -106,7 +106,6 @@ input:-webkit-autofill:active {
 
 .terms-details {
   align-self: center;
-  max-width: 70%;
   text-align: left;
   justify-items: center;
 }
