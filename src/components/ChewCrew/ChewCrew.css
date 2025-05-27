@@ -5,12 +5,6 @@
 
 }
 
-.disclaimer-text {
-  font-size: small;
-  margin-top: 3rem;
-  padding: 0 2.5rem;
-  text-align: center;
-}
 
 .form-container {
   align-items: center;
@@ -59,15 +53,6 @@ input:-webkit-autofill:active {
   margin-bottom: 0;
 }
 
-.sign-up-text {
-  color: #FFF;
-  font-weight: 600;
-  padding: 0.65rem 1.5rem 0.65rem 1.5rem;
-  text-align: center;
-  text-transform: uppercase;
-  
-}
-
 .submit-button {
   background-color: #17478F;
   border: 2px solid #FFD101;
@@ -105,13 +90,17 @@ input:-webkit-autofill:active {
 }
 
 .terms-details {
-  align-self: center;
   text-align: left;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .terms-text {
   font-size: x-small;
+  padding-left: 1.5rem;
+  align-items: center;
+  justify-self: center;
 }
 
 .terms-label {
