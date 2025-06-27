@@ -10,7 +10,10 @@ const ChewCrew = ({ onSignupComplete, prize }) => {
   const [fname, setFName] = useState('');
   const [lname, setLName] = useState('');
   const [email, setEmail] = useState('');
-  const [flavor, setFlavor] = useState('');
+  const [address, setAddress] = useState('');
+  const [city, setCity] = useState('');
+  const [state, setState] = useState('');
+  const [zip, setZIP] = useState('');
   const [terms, setTerms] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState(null);
@@ -22,19 +25,35 @@ const ChewCrew = ({ onSignupComplete, prize }) => {
     setIsSubmitting(true);
     setError(null);
 
-    jsonp(
-      `${MailchimpURL}&FNAME=${fname}&LNAME=${lname}&EMAIL=${email}&FLAVOR=${flavor}&accepts_marketing=${terms}`,
-      { param: 'c' },
-      (err, data) => {
+    const params = new URLSearchParams({
+      FNAME: fname,
+      LNAME: lname,
+      EMAIL: email,
+      ADDRESS: address,
+      CITY: city,
+      STATE: state,
+      ZIP: zip,
+      ACCEPTS: terms,
+    }).toString();
+
+    jsonp(`${MailchimpURL}&${params}`, { param: 'c' }, async (err, data) => {
+      if (err || data.result === 'error') {
         setIsSubmitting(false);
-        if (err) {
-          setError('An error occurred. Please try again.');
-        } else {
-          onSignupComplete();
+        setError(data.msg || 'An error occurred. Please try again.');
+      } else {
+        // Submit data to Apps Script
+        try {
+          const coupon = localStorage.getItem('couponCode');
+          await fetch(`https://script.google.com/macros/s/AKfycbz8xPoD4Y3EY1w0wW17l_FNh3cQ7xjEO1Wxnv-GgAKQ4Duj5ZCGbW2HQymRdYly5il7HA/exec?action=submitInfo&coupon=${encodeURIComponent(coupon)}&address=${encodeURIComponent(address)}&city=${encodeURIComponent(city)}&state=${encodeURIComponent(state)}&zip=${encodeURIComponent(zip)}`);
+        } catch (e) {
+          console.error("Error storing address:", e);
         }
+        setIsSubmitting(false);
+        onSignupComplete();
       }
-    );
+    });
   };
+
 
   return (
     <div className="chew-crew-container">
@@ -54,7 +73,10 @@ const ChewCrew = ({ onSignupComplete, prize }) => {
               <input id="mce-FNAME" name="FNAME" type="text" value={fname} onChange={(e) => setFName(e.target.value)} placeholder="First Name" required />
               <input id="mce-LNAME" name="LNAME" type="text" value={lname} onChange={(e) => setLName(e.target.value)} placeholder="Last Name" required />
               <input id="mce-EMAIL" name="EMAIL" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email Address" required />
-              <input id="mce-FLAVOR" name="FLAVOR" type="text" value={flavor} onChange={(e) => setFlavor(e.target.value)} placeholder="Favorite Flavor" required />
+              <input id="mce-ADDRESS" name="ADDRESS" type="text" value={address} onChange={(e) => setAddress(e.target.value)} placeholder="Shipping Address" required />
+              <input id="mce-CITY" name="CITY" type="text" value={city} onChange={(e) => setCity(e.target.value)} placeholder="City" required />
+              <input id="mce-STATE" name="STATE" type="text" value={state} onChange={(e) => setState(e.target.value)} placeholder="State" required />
+              <input id="mce-ZIP_CODE" name="ZIP_CODE" type="text" inputMode="numeric" maxLength="10" value={zip} onChange={(e) => setZIP(e.target.value)} placeholder="ZIP Code" required />
             </div>
 
             <div className="terms-container">

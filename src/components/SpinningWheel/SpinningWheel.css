@@ -12,8 +12,10 @@
 .wheel-image {
   width: 100%;
   height: auto;
-  transition: transform 4s cubic-bezier(0.33, 1, 0.68, 1);
+  transition: transform 8s cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: transform;
 }
+
 
 .wheel-pointer {
   position: absolute;
@@ -36,9 +38,9 @@
 }
 
 .spin-button {
-  background-color: #17478F;
-  border: 2px solid #FFD101;
-  color: white;
+  background-color: #FFD101;
+  border: 2px solid #17478F;
+  color: #17478F;
   cursor: pointer;
   min-width: 14rem;
   max-width: 16rem;

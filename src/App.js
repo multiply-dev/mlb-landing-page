@@ -16,7 +16,7 @@ import './App.css';
     '20% Off': 'prize-20-percent-off',
     'HI-CHEW Stick': 'prize-hi-chew-stick',
     '15% Off': 'prize-15-percent-off',
-    'Tickets': 'prize-tickets'
+    'Stadium Tickets': 'prize-tickets'
   };
 
 const App = () => {

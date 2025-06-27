@@ -24,7 +24,7 @@
   color: #FFD101;
   font-size: 24px;
   font-weight: 700;
-  padding: 4rem 2rem 0;
+  padding: 4rem 0 0;
   text-transform: uppercase;
 }
 
@@ -32,6 +32,18 @@
   color: white;
   font-size: 32px;
   font-weight: 800;
+  -webkit-text-stroke: 0.33rem #042FBA;
+  -webkit-text-fill: #FFF;
+  letter-spacing: 4px;
+  paint-order: stroke fill;
+}
+
+.with-hichew-text {
+  color: #042FBA;
+  -webkit-text-stroke: 0.2rem #FFF;
+  -webkit-text-fill: #FFF;
+  letter-spacing: 4px;
+  paint-order: stroke fill;
 }
 
 p {

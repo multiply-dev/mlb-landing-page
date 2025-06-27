@@ -8,6 +8,7 @@ const CouponModal = ({ prize, prizeColor }) => {
     const savedCoupon = localStorage.getItem('couponCode');
 
     const getCoupon = async () => {
+      console.log("Calling getCoupon")
       if (prize) {
         try {                                                             
           const response = await fetch(`https://script.google.com/macros/s/AKfycbz8xPoD4Y3EY1w0wW17l_FNh3cQ7xjEO1Wxnv-GgAKQ4Duj5ZCGbW2HQymRdYly5il7HA/exec?prize=${encodeURIComponent(prize)}`);
@@ -31,15 +32,25 @@ const CouponModal = ({ prize, prizeColor }) => {
   return (
     <div className="coupon-modal-overlay">
       <div className={`coupon-modal-content ${prizeColor}`}>
+      {['10% Off', '15% Off', '20% Off'].includes(prize) ? (
         <div>
-          <h1 className="coupon-text">Coupon Code:</h1>
-          <h3 className="coupon-subtext">{coupon}</h3>
+          <div>
+            <h1 className="coupon-text">Coupon Code:</h1>
+            <h3 className="coupon-subtext">{coupon}</h3>
+          </div>
+          <div>
+            <h3>
+              Visit <a href="https://www.hi-chew.com/" className="hi-chew-link" target="_blank" rel="noreferrer">HI-CHEW<sup>®</sup></a> and use this code at checkout
+            </h3>
+          </div>
         </div>
+      ) : (
         <div>
-          <h3>
-            Visit <a href="https://www.hi-chew.com/" className="hi-chew-link" target="_blank" rel="noreferrer">HI-CHEW<sup>®</sup></a> and use this code at checkout
+          <h3 className="coupon-subtext">
+            Your prize will be shipped to the address you provided!
           </h3>
         </div>
+      )}
       </div>
     </div>
   );
