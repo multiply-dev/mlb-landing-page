@@ -2,9 +2,16 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-
 }
 
+.terms-scrollbox {
+  color: #17478F;
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
 
 .form-container {
   align-items: center;
