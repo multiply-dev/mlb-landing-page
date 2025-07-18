@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mlb-landing-page/static/css/main.0a0e642b.css",
-    "main.js": "/mlb-landing-page/static/js/main.f7916261.js",
+    "main.js": "/mlb-landing-page/static/js/main.117f0dd9.js",
     "static/js/453.a6571f96.chunk.js": "/mlb-landing-page/static/js/453.a6571f96.chunk.js",
     "static/media/field-header.png": "/mlb-landing-page/static/media/field-header.a3c43bc8e6be117e94d5.png",
     "static/media/Wheel.gif": "/mlb-landing-page/static/media/Wheel.2fb49334a081541e4a2c.gif",
@@ -10,11 +10,11 @@
     "static/media/Logo.png": "/mlb-landing-page/static/media/Logo.7cbf0bcc36a0550d2118.png",
     "index.html": "/mlb-landing-page/index.html",
     "main.0a0e642b.css.map": "/mlb-landing-page/static/css/main.0a0e642b.css.map",
-    "main.f7916261.js.map": "/mlb-landing-page/static/js/main.f7916261.js.map",
+    "main.117f0dd9.js.map": "/mlb-landing-page/static/js/main.117f0dd9.js.map",
     "453.a6571f96.chunk.js.map": "/mlb-landing-page/static/js/453.a6571f96.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0a0e642b.css",
-    "static/js/main.f7916261.js"
+    "static/js/main.117f0dd9.js"
   ]
 }
