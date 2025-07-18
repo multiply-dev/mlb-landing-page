@@ -44,7 +44,7 @@ const ChewCrew = ({ onSignupComplete, prize }) => {
         // Submit data to Apps Script
         try {
           const coupon = localStorage.getItem('couponCode');
-          await fetch(`https://script.google.com/macros/s/AKfycbz8xPoD4Y3EY1w0wW17l_FNh3cQ7xjEO1Wxnv-GgAKQ4Duj5ZCGbW2HQymRdYly5il7HA/exec?action=submitInfo&coupon=${encodeURIComponent(coupon)}&address=${encodeURIComponent(address)}&city=${encodeURIComponent(city)}&state=${encodeURIComponent(state)}&zip=${encodeURIComponent(zip)}`);
+          await fetch(`https://script.google.com/macros/s/AKfycbz8xPoD4Y3EY1w0wW17l_FNh3cQ7xjEO1Wxnv-GgAKQ4Duj5ZCGbW2HQymRdYly5il7HA/exec?action=submitInfo&coupon=${encodeURIComponent(coupon)}&address=${encodeURIComponent(address)}&city=${encodeURIComponent(city)}&state=${encodeURIComponent(state)}&fname=${encodeURIComponent(fname)}&lname=${encodeURIComponent(lname)}&email=${encodeURIComponent(email)}&zip=${encodeURIComponent(zip)}`);
         } catch (e) {
           console.error("Error storing address:", e);
         }
